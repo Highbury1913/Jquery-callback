@@ -1,13 +1,9 @@
-var pushPull= function (direction) {
-	direction();
+var  getTime =function  (Fun) {
+	var time= new Date();
+	Fun(time);
 }
-var push = function () {
-  console.log("pushing it!");
+var returnTime = function (time) {
+  alert('The current time is: ' + time);
 };
 
-var pull = function () {
-  console.log("pulling it!");
-};
-
-pushPull(push);
-pushPull(pull);
+getTime(returnTime);
